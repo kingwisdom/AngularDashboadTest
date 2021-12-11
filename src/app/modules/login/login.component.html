@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="right-side"></div>
+    <div class="left-side">
+        <div class="login-container">
+            <!-- logo -->
+            <div class="title">
+                <div class="logo">S</div>
+                <h5>
+                    Express Lands
+                </h5>
+            </div>
+            
+            <div class="login-card">
+                <div class="heading">
+                    Login to your account
+                </div>
+                <p>Welcome back! Please login to your account</p>
+                <form (submit)="onSubmit(f)" ngForm  #f="ngForm">
+                    <input type="text" class="form-control" ngModel name="username" placeholder=" Enter Username" required #username="ngModel">
+                    <span *ngIf="!username.valid && username.touched" style="color: red;font-size: 10px;">Username is required!</span>
+                <input type="password" ngModel name="password" class="form-control" placeholder="Enter Password" #password="ngModel" required>
+                <span *ngIf="!password.valid && password.touched" style="color: red;font-size: 10px;">password is required!</span>
+                <button type="submit" [disabled]="!f.valid" class="btn">
+                    LOG IN
+                </button>
+                </form>
+                <a style="text-align: center;">Forget Password?</a>
+            </div>
+        </div>
+    </div>
+</div>

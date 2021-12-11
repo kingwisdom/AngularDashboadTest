@@ -1,0 +1,61 @@
+.menu-content{
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.title h5{
+    margin-top: 10px;
+    padding: 0;
+    margin-left: 10px;
+}
+.title .logo{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background: linear-gradient(147.87deg, #133F77 26.36%, #0F9CDA 125.59%);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 2.4;
+}
+.side-menus {
+    display: block;
+    text-decoration: none;
+}
+.side-menus li{
+    display: flex;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 10px;
+}
+.side-menus span{
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.active{
+    background-color: white;
+    box-shadow: lightgray;
+}
+.menu-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.manage-user{
+    display: flex;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 10px;
+    margin: 30px 0 0 30px;
+}
+
+.manage-user span{
+    margin-left: 10px;
+}
